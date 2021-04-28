@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: rgb(75, 38, 109);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.head-img {
+  width: 20vw;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgb(4, 2, 7);
+  transition: width 1s;
+}
+
+.img-contracted {
+  width: 10vw;
+  margin-top: 5rem;
+}
+
+.img-expanded {
+  width: 20vw;
+  margin-top: 10rem;
+}
+
+.head {
   color: white;
+  transition: margin 1s;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+.head-contracted {
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.head-expanded {
+  font-size: 2.5rem;
+}
+
+.search-name {
+  outline: none;
+  height: 2rem;
+  width: 40vw;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 5px rgb(4, 2, 7);
+  padding: 0.5rem;
+}
+
+.search-name::placeholder {
+  color: rgb(185, 144, 224);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 45vw;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  background-color: rgba(165, 161, 161, 0.5);
+  margin: 0.7rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 0 3px rgb(79, 76, 83);
+}
+
+.card:hover {
+  background-color: rgba(119, 116, 116, 0.5);
 }
